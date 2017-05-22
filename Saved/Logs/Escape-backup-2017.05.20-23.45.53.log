@@ -1,0 +1,937 @@
+﻿Log file open, 03/17/17 23:36:00
+LogInit:Display: Running engine for game: Escape
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(136776054) SRandInit(136776054).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.092737
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3299760
+LogInit: Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Feb 14 2017 02:04:14
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.03.18-05.36.02:265][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.18-05.36.02:265][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.03.18-05.36.02:282][  0]LogInit: Computer: SKYWALKER-PC
+[2017.03.18-05.36.02:282][  0]LogInit: User: Skywalker
+[2017.03.18-05.36.02:282][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.03.18-05.36.02:282][  0]LogInit: High frequency timer resolution =2.825503 MHz
+[2017.03.18-05.36.02:282][  0]LogMemory: Memory total: Physical=6.2GB (7GB approx)
+[2017.03.18-05.36.02:282][  0]LogMemory: Platform Memory Stats for Windows
+[2017.03.18-05.36.02:282][  0]LogMemory: Process Physical Memory: 262.75 MB used, 262.75 MB peak
+[2017.03.18-05.36.02:282][  0]LogMemory: Process Virtual Memory: 262.47 MB used, 262.47 MB peak
+[2017.03.18-05.36.02:282][  0]LogMemory: Physical Memory: 4545.27 MB used,  1805.23 MB free, 6350.50 MB total
+[2017.03.18-05.36.02:282][  0]LogMemory: Virtual Memory: 643.36 MB used,  1805.23 MB free, 134217728.00 MB total
+[2017.03.18-05.36.02:457][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.03.18-05.36.08:463][  0]LogD3D11RHI: D3D11 adapters:
+[2017.03.18-05.36.08:534][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GT 750M' (Feature Level 11_0)
+[2017.03.18-05.36.08:534][  0]LogD3D11RHI:       994/0/3175 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.03.18-05.36.08:539][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.03.18-05.36.08:539][  0]LogD3D11RHI:       0/0/3175 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.03.18-05.36.08:539][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.03.18-05.36.08:554][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.03.18-05.36.08:554][  0]LogD3D11RHI:     GPU DeviceId: 0xfe9 (for the marketing name, search the web for "GPU Device Id")
+[2017.03.18-05.36.08:554][  0]LogWindows: EnumDisplayDevices:
+[2017.03.18-05.36.08:554][  0]LogWindows:    0. 'NVIDIA GeForce GT 750M' (P:1 D:1)
+[2017.03.18-05.36.08:554][  0]LogWindows:    1. 'NVIDIA GeForce GT 750M' (P:0 D:0)
+[2017.03.18-05.36.08:555][  0]LogWindows:    2. 'NVIDIA GeForce GT 750M' (P:0 D:0)
+[2017.03.18-05.36.08:555][  0]LogWindows: DebugString: FoundDriverCount:3 
+[2017.03.18-05.36.08:555][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GT 750M
+[2017.03.18-05.36.08:555][  0]LogD3D11RHI:   Driver Version: 376.54 (internal:21.21.13.7654, unified:376.54)
+[2017.03.18-05.36.08:555][  0]LogD3D11RHI:      Driver Date: 12-29-2016
+[2017.03.18-05.36.08:555][  0]LogRHI: Texture pool is 696 MB (70% of 994 MB)
+[2017.03.18-05.36.08:624][  0]LogD3D11RHI:Warning: Timestamp queries are currently disabled on this hardware due to instability. Realtime GPU stats will not be available. You can override this behaviour by setting r.NVIDIATimestampWorkaround to 0
+[2017.03.18-05.36.08:631][  0]LogD3D11RHI: Async texture creation enabled
+[2017.03.18-05.36.08:667][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.03.18-05.36.08:710][  0]LogShaderCompilers: Guid format shader working directory is -17 characters bigger than the processId version (../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Intermediate/Shaders/WorkingDirectory/10196/).
+[2017.03.18-05.36.08:711][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Skywalker/AppData/Local/Temp/UnrealShaderWorkingDir/91B4213D4B8C53A61F28D1A629F44A66/'.
+[2017.03.18-05.36.08:711][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.03.18-05.36.34:192][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.03.18-05.36.34:325][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.03.18-05.36.34:435][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.03.18-05.36.34:555][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.03.18-05.36.34:684][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.03.18-05.36.34:820][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.03.18-05.36.34:977][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.03.18-05.36.35:148][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.03.18-05.36.35:324][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.03.18-05.36.35:550][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.03.18-05.36.35:715][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.03.18-05.36.35:850][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.03.18-05.36.36:001][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.03.18-05.36.36:163][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.03.18-05.36.36:342][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.03.18-05.36.36:666][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.03.18-05.36.36:666][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.03.18-05.36.36:768][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.03.18-05.36.37:002][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.03.18-05.36.37:092][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.03.18-05.36.37:294][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.03.18-05.36.37:483][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.03.18-05.36.37:655][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.03.18-05.36.37:890][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.03.18-05.36.37:890][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.03.18-05.36.39:258][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.03.18-05.36.39:882][  0]LogDerivedDataCache: Loaded boot cache 0.62s 50MB C:/Users/Skywalker/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.03.18-05.36.39:882][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Skywalker/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.03.18-05.36.39:883][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.03.18-05.36.39:883][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.03.18-05.36.39:883][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.03.18-05.36.39:883][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.03.18-05.36.39:902][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.03.18-05.36.39:915][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Skywalker/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.03.18-05.36.39:923][  0]LogSlate: Using Freetype 2.6.0
+[2017.03.18-05.36.39:924][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.18-05.36.39:924][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.03.18-05.36.40:334][  0]LogInit: Selected Device Profile: [Windows]
+[2017.03.18-05.36.40:347][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.03.18-05.36.41:007][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.03.18-05.36.41:146][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.03.18-05.36.41:294][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.03.18-05.36.41:294][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.03.18-05.36.41:294][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.03.18-05.36.44:726][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: escape, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3479341666
+[2017.03.18-05.36.44:800][  0]LogAssetRegistry: FAssetRegistry took 0.0219 seconds to start up
+[2017.03.18-05.36.44:865][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.024371 seconds
+[2017.03.18-05.36.44:871][  0]LogUObjectArray: 32475 objects as part of root set at end of initial load.
+[2017.03.18-05.36.44:871][  0]LogUObjectAllocator: 7073360 out of 0 bytes used by permanent object pool.
+[2017.03.18-05.36.44:871][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.03.18-05.36.45:010][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.03.18-05.37.44:809][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.03.18-05.37.44:884][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.03.18-05.37.46:616][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.03.18-05.37.48:277][  0]SourceControl: Info Source control is disabled
+[2017.03.18-05.37.48:496][  0]SourceControl: Info Source control is disabled
+[2017.03.18-05.37.48:618][  0]SourceControl: Info Source control is disabled
+[2017.03.18-05.37.48:728][  0]SourceControl: Info Source control is disabled
+[2017.03.18-05.37.51:685][  0]LogEngine: Initializing Engine...
+[2017.03.18-05.37.51:686][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.03.18-05.37.52:452][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.03.18-05.37.52:469][  0]LogInit: XAudio2 using 'Headphones (Cirrus Logic CS4206B (AB 06))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.18-05.37.52:479][  0]LogInit: FAudioDevice initialized.
+[2017.03.18-05.37.52:514][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/Skywalker/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.03.18-05.37.52:520][  0]LogInit: Texture streaming: Enabled
+[2017.03.18-05.37.52:741][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.03.18-05.37.52:741][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={5A621C5B-40E1-F8F6-B6BF-F495C6D7FA77}
+[2017.03.18-05.37.53:277][  0]LogInit: Transaction tracking system initialized
+[2017.03.18-05.37.54:025][  0]BlueprintLog: New page: Editor Load
+[2017.03.18-05.37.56:025][  0]LocalizationService: Info Localization service is disabled
+[2017.03.18-05.37.57:714][  0]LogConsoleResponse:Display: 
+[2017.03.18-05.37.58:163][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.03.18-05.37.58:163][  0]LogCook:Display: Mobile HDR setting 1
+[2017.03.18-05.37.58:729][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Skywalker/Documents/Unreal Projects/Escape/Content/' took 0.01s
+[2017.03.18-05.38.00:636][  0]SourceControl: Info Source control is disabled
+[2017.03.18-05.38.00:636][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/NewMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.03.18-05.38.00:638][  0]LightingResults: New page: Lighting Build
+[2017.03.18-05.38.00:727][  0]MapCheck: New page: Map Check
+[2017.03.18-05.38.00:727][  0]LightingResults: New page: Lighting Build
+[2017.03.18-05.38.01:413][  0]LogAIModule: Creating AISystem for world NewMap
+[2017.03.18-05.38.01:457][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.03.18-05.38.01:458][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.03.18-05.38.01:536][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 77.819ms to complete.
+[2017.03.18-05.38.01:536][  0]LogFileHelpers: Loading map 'NewMap' took 0.899
+[2017.03.18-05.38.01:734][  0]LogCollectionManager: Loaded 0 collections in 0.002241 seconds
+[2017.03.18-05.38.01:866][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Skywalker/Documents/Unreal Projects/Escape/Saved/Collections/' took 0.01s
+[2017.03.18-05.38.01:866][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Skywalker/Documents/Unreal Projects/Escape/Content/Developers/Skywalker/Collections/' took 0.01s
+[2017.03.18-05.38.01:866][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Skywalker/Documents/Unreal Projects/Escape/Content/Collections/' took 0.01s
+[2017.03.18-05.38.01:866][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.03.18-05.38.01:880][  0]LogContentBrowser: Native class hierarchy populated in 0.0138 seconds. Added 2248 classes and 452 folders.
+[2017.03.18-05.38.01:883][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.03.18-05.38.01:883][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.03.18-05.38.02:022][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0025 seconds. Added 0 classes and 0 folders.
+[2017.03.18-05.38.03:118][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0022 seconds. Added 0 classes and 0 folders.
+[2017.03.18-05.38.03:346][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0021 seconds. Added 1 classes and 2 folders.
+[2017.03.18-05.38.03:425][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.03.18-05.38.03:435][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.03.18-05.38.03:553][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0023 seconds. Added 1 classes and 2 folders.
+[2017.03.18-05.38.03:553][  0]LogLoad: (Engine Initialization) Total time: 125.06 seconds
+[2017.03.18-05.38.03:553][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.43 seconds
+[2017.03.18-05.38.03:553][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.03.18-05.38.03:553][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.03.18-05.38.03:895][  0]LogOcInput: OculusInput pre-init called
+[2017.03.18-05.38.03:913][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.03.18-05.38.03:915][  0]LogSlate: Took 0.000283 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.03.18-05.38.03:919][  0]LogSlate: Took 0.000239 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.03.18-05.38.03:943][  0]LogSlate: Took 0.022714 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.03.18-05.38.03:969][  0]LogSlate: Took 0.018522 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2017.03.18-05.38.04:019][  0]LogSlate: Took 0.000284 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.18-05.38.04:245][  0]LogRenderer: Reallocating scene render targets to support 1136x688 NumSamples 1 (Frame:2).
+[2017.03.18-05.38.04:412][  1]LogAssetRegistry: Asset discovery search completed in 79.6337 seconds
+[2017.03.18-05.38.04:412][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000005 seconds (found 0 objects)
+[2017.03.18-05.38.04:412][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000139 seconds (updated 0 objects)
+[2017.03.18-05.38.10:395][126]LogTemp: Repeting last play command: Selected Viewport
+[2017.03.18-05.38.10:413][126]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.03.18-05.38.10:413][126]PIE: New page: PIE session: NewMap (Mar 17, 2017, 5:38:10 PM)
+[2017.03.18-05.38.10:414][126]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_NewMap
+[2017.03.18-05.38.10:419][126]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005696s)
+[2017.03.18-05.38.10:421][126]LogAIModule: Creating AISystem for world NewMap
+[2017.03.18-05.38.10:421][126]LogPlayLevel: PIE: World Init took: (0.001631s)
+[2017.03.18-05.38.10:422][126]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/NewMap.NewMap to /Game/UEDPIE_0_NewMap.NewMap (0.007961s)
+[2017.03.18-05.38.10:449][126]LogInit: XAudio2 using 'Headphones (Cirrus Logic CS4206B (AB 06))' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.03.18-05.38.10:459][126]LogInit: FAudioDevice initialized.
+[2017.03.18-05.38.10:526][126]LogLoad: Game class is 'EscapeGameModeBase_BP_C'
+[2017.03.18-05.38.10:529][126]LogWorld: Bringing World /Game/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2017.03.17-23.38.10
+[2017.03.18-05.38.10:530][126]LogWorld: Bringing up level for play took: 0.002105
+[2017.03.18-05.38.10:608][126]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0024 seconds. Added 11 classes and 0 folders.
+[2017.03.18-05.38.10:610][126]LogTemp:Warning: GRABBER ACTIVATED
+[2017.03.18-05.38.10:610][126]LogTemp:Warning: SM_Couch_2 is at X=420.000 Y=180.000 Z=20.000
+[2017.03.18-05.38.10:610][126]LogTemp:Warning: SM_MatPreviewMesh_02_2 is at X=-330.000 Y=270.000 Z=20.000
+[2017.03.18-05.38.10:610][126]PIE: Info Play in editor start time for /Game/UEDPIE_0_NewMap 0.073
+[2017.03.18-05.38.13:049][242]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:068][243]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:088][244]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:107][245]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:126][246]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:145][247]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:165][248]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:184][249]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:205][250]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:225][251]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:244][252]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:262][253]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:283][254]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:302][255]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:321][256]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:338][257]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:358][258]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:376][259]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:395][260]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:412][261]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:432][262]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:450][263]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:469][264]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:486][265]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:507][266]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:524][267]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:544][268]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:562][269]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:580][270]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:599][271]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:617][272]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:637][273]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:657][274]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:674][275]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:693][276]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:711][277]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:731][278]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:750][279]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:766][280]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:785][281]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:806][282]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:825][283]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:844][284]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:862][285]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:883][286]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.13:901][287]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.21:813][714]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.21:832][715]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.21:851][716]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.21:870][717]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.21:888][718]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.21:907][719]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.21:928][720]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.21:945][721]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.21:965][722]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.21:983][723]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:002][724]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:021][725]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:040][726]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:058][727]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:077][728]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:098][729]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:117][730]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:136][731]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:155][732]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:173][733]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:194][734]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:213][735]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:232][736]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:250][737]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:270][738]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:290][739]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:309][740]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:327][741]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:347][742]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:365][743]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:385][744]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:404][745]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:424][746]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:445][747]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:465][748]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:485][749]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:505][750]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:524][751]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:544][752]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:562][753]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:582][754]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:602][755]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:621][756]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:641][757]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:661][758]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:679][759]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:700][760]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:718][761]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:738][762]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:756][763]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:776][764]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:795][765]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:814][766]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:832][767]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:851][768]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:869][769]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:889][770]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:907][771]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:926][772]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:946][773]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:964][774]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.22:983][775]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.23:003][776]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.23:022][777]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.23:041][778]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.23:061][779]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.23:081][780]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.23:100][781]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.23:119][782]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:106][835]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:124][836]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:145][837]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:164][838]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:183][839]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:201][840]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:220][841]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:239][842]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:258][843]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:275][844]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:295][845]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:314][846]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:333][847]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:351][848]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:369][849]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:386][850]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:406][851]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:425][852]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:443][853]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:461][854]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:482][855]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:500][856]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:518][857]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:537][858]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:556][859]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:573][860]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:593][861]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:613][862]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:630][863]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:650][864]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:669][865]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:689][866]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:709][867]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:728][868]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:747][869]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:768][870]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:786][871]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:807][872]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:825][873]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:846][874]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:865][875]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:886][876]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:905][877]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:924][878]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:942][879]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:963][880]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.24:984][881]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:002][882]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:021][883]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:040][884]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:060][885]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:079][886]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:099][887]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:118][888]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:137][889]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:156][890]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:175][891]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:195][892]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:214][893]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:232][894]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:251][895]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:270][896]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:289][897]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:308][898]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:328][899]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:346][900]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:366][901]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:385][902]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:404][903]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:423][904]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:442][905]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:461][906]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:481][907]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:499][908]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:519][909]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:538][910]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:557][911]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:576][912]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:595][913]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:615][914]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:632][915]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:652][916]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:670][917]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:689][918]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:708][919]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:726][920]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:743][921]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:763][922]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:783][923]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:800][924]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:819][925]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:838][926]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:856][927]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:874][928]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:893][929]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:912][930]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:931][931]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:949][932]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:970][933]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.25:988][934]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:007][935]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:024][936]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:042][937]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:063][938]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:084][939]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:101][940]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:118][941]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:138][942]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:158][943]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:177][944]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:197][945]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:215][946]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:234][947]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:252][948]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:274][949]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:291][950]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:311][951]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:329][952]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:348][953]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:368][954]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:389][955]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:408][956]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:427][957]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:445][958]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:465][959]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:483][960]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:503][961]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:521][962]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:540][963]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:558][964]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:578][965]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:599][966]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:615][967]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:634][968]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:651][969]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:671][970]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:688][971]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:707][972]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:726][973]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:744][974]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:761][975]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:781][976]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:798][977]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:817][978]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:834][979]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:854][980]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:872][981]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:890][982]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:909][983]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:927][984]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:947][985]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:966][986]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.26:986][987]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.27:006][988]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.27:025][989]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.27:044][990]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.27:064][991]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.27:082][992]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:123][ 45]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:143][ 46]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:162][ 47]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:183][ 48]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:202][ 49]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:221][ 50]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:239][ 51]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:258][ 52]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:297][ 54]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:316][ 55]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:711][ 76]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:729][ 77]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:748][ 78]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:768][ 79]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:786][ 80]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:806][ 81]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:825][ 82]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:845][ 83]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:863][ 84]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:882][ 85]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:901][ 86]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:918][ 87]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:938][ 88]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:955][ 89]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:975][ 90]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.28:993][ 91]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:013][ 92]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:030][ 93]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:051][ 94]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:069][ 95]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:088][ 96]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:107][ 97]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:126][ 98]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:144][ 99]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:165][100]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:183][101]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:200][102]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:221][103]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:241][104]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:258][105]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:278][106]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:296][107]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:317][108]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:335][109]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:356][110]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:374][111]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:395][112]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:414][113]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:435][114]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:454][115]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:474][116]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:494][117]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:514][118]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:533][119]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:551][120]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:576][121]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:597][122]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:616][123]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:634][124]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:657][125]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:680][126]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:699][127]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:719][128]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:737][129]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:757][130]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:777][131]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:796][132]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:816][133]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:838][134]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:857][135]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:876][136]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:895][137]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:915][138]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:934][139]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:952][140]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:973][141]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.29:993][142]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:012][143]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:032][144]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:051][145]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:071][146]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:093][147]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:112][148]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:131][149]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:152][150]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:171][151]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:191][152]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:209][153]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:229][154]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:247][155]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:268][156]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:287][157]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:306][158]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:324][159]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:345][160]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:363][161]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:383][162]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:404][163]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:423][164]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:442][165]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:461][166]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:481][167]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:501][168]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:521][169]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:539][170]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:559][171]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:579][172]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:599][173]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:617][174]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:638][175]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:660][176]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:680][177]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:699][178]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:719][179]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:739][180]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:759][181]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:777][182]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:797][183]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:816][184]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:833][185]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:856][186]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:877][187]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:896][188]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:916][189]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:935][190]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:954][191]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:973][192]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.30:993][193]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:011][194]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:030][195]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:050][196]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:071][197]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:090][198]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:110][199]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:130][200]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:150][201]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:169][202]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:187][203]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:208][204]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:229][205]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:248][206]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:266][207]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:287][208]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:309][209]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:326][210]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:347][211]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:366][212]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:384][213]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:408][214]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:428][215]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:448][216]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:470][217]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:490][218]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:509][219]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:529][220]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:549][221]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:566][222]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.38.31:587][223]LogTemp:Warning: Collision: SM_MatPreviewMesh_02_2
+[2017.03.18-05.43.13:426][509]LogSlate: Took 0.000531 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.03.18-05.43.13:496][509]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/NewMap" FILE="../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/NewMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.03.18-05.43.14:424][509]LogSavePackage: Save=324.21ms
+[2017.03.18-05.43.14:425][509]LogSavePackage: Moving '../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Saved/NewMapBE6B389B469C8EB32607BDB4A2B1FFD2.tmp' to '../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/NewMap.umap'
+[2017.03.18-05.43.14:438][509]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/NewMap.umap
+[2017.03.18-05.43.14:530][509]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/NewMap_BuiltData" FILE="../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/NewMap_BuiltData.uasset" SILENT=true
+[2017.03.18-05.43.14:723][509]LogSavePackage: Save=120.04ms
+[2017.03.18-05.43.14:723][509]LogSavePackage: Moving '../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Saved/NewMap_BuiltData5D84C29441DF57A0775674849E1AB4EC.tmp' to '../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/NewMap_BuiltData.uasset'
+[2017.03.18-05.43.14:726][509]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/NewMap_BuiltData.uasset
+[2017.03.18-05.43.34:882][365]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/NewMap" FILE="../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/NewMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.03.18-05.43.34:954][365]LogSavePackage: Save=31.46ms
+[2017.03.18-05.43.34:954][365]LogSavePackage: Moving '../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Saved/NewMap06F793934C7B28F2500EC7B90E68B232.tmp' to '../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/NewMap.umap'
+[2017.03.18-05.43.34:956][365]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/NewMap.umap
+[2017.03.18-05.43.34:976][365]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/NewMap_BuiltData" FILE="../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/NewMap_BuiltData.uasset" SILENT=true
+[2017.03.18-05.43.35:040][365]LogSavePackage: Save=57.32ms
+[2017.03.18-05.43.35:041][365]LogSavePackage: Moving '../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Saved/NewMap_BuiltDataFDEB16C5418F741F9A55C591ABD13991.tmp' to '../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/NewMap_BuiltData.uasset'
+[2017.03.18-05.43.35:042][365]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/NewMap_BuiltData.uasset
+[2017.03.18-05.43.42:368][132]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.03.18-05.43.43:968][133]Cmd: QUIT_EDITOR
+[2017.03.18-05.43.44:895][133]LogExit: Preparing to exit.
+[2017.03.18-05.43.48:891][133]LogDirectoryWatcher: A directory notification for 'C:/Users/Skywalker/Documents/Unreal Projects/Escape/Content/' was aborted.
+[2017.03.18-05.43.50:418][133]LogExit: Editor shut down
+[2017.03.18-05.43.50:419][133]LogExit: Transaction tracking system shut down
+[2017.03.18-05.43.55:255][133]LogObj: Freed 0b from 0 cluster array pools.
+[2017.03.18-05.43.55:255][133]LogExit: Object subsystem successfully closed.
+[2017.03.18-05.43.55:876][133]LogD3D11RHI: Shutdown
+[2017.03.18-05.43.55:876][133]LogD3D11RHI: CleanupD3DDevice
+[2017.03.18-05.43.56:216][133]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.03.18-05.44.00:249][133]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (500)
+[2017.03.18-05.44.00:249][133]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.03.18-05.44.00:312][133]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.03.18-05.44.00:312][133]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2017.03.18-05.44.00:312][133]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.03.18-05.44.00:356][133]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.03.18-05.44.00:378][133]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.03.18-05.44.00:378][133]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.03.18-05.44.00:378][133]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.03.18-05.44.00:456][133]LogDirectoryWatcher: A directory notification for 'C:/Users/Skywalker/Documents/Unreal Projects/Escape/Content/Collections/' was aborted.
+[2017.03.18-05.44.00:456][133]LogDirectoryWatcher: A directory notification for 'C:/Users/Skywalker/Documents/Unreal Projects/Escape/Content/Developers/Skywalker/Collections/' was aborted.
+[2017.03.18-05.44.00:456][133]LogDirectoryWatcher: A directory notification for 'C:/Users/Skywalker/Documents/Unreal Projects/Escape/Saved/Collections/' was aborted.
+[2017.03.18-05.44.00:456][133]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.03.18-05.44.00:481][133]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.03.18-05.44.00:481][133]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.03.18-05.44.00:566][133]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.03.18-05.44.00:566][133]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.03.18-05.44.00:566][133]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.03.18-05.44.00:566][133]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.03.18-05.44.00:566][133]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.03.18-05.44.00:598][133]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.03.18-05.44.00:760][133]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.03.18-05.44.00:787][133]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.03.18-05.44.00:802][133]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.03.18-05.44.00:802][133]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.03.18-05.44.01:044][133]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.03.18-05.44.01:044][133]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.03.18-05.44.01:045][133]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.03.18-05.44.01:045][133]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.03.18-05.44.01:045][133]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.03.18-05.44.01:045][133]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.03.18-05.44.01:045][133]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.03.18-05.44.01:045][133]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.03.18-05.44.01:045][133]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.03.18-05.44.01:045][133]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.03.18-05.44.01:045][133]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.03.18-05.44.01:045][133]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.03.18-05.44.01:045][133]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.03.18-05.44.01:261][133]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.03.18-05.44.01:261][133]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.03.18-05.44.01:261][133]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.03.18-05.44.01:261][133]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.03.18-05.44.01:261][133]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.03.18-05.44.01:557][133]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.03.18-05.44.01:586][133]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.03.18-05.44.01:682][133]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.03.18-05.44.01:682][133]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.03.18-05.44.01:682][133]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.03.18-05.44.01:682][133]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.03.18-05.44.01:746][133]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.03.18-05.44.02:055][133]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.03.18-05.44.02:055][133]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.03.18-05.44.02:055][133]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.03.18-05.44.02:196][133]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.03.18-05.44.02:412][133]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.03.18-05.44.02:453][133]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.03.18-05.44.02:478][133]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.03.18-05.44.02:589][133]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.03.18-05.44.02:589][133]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.03.18-05.44.02:720][133]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.03.18-05.44.02:822][133]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.03.18-05.44.02:855][133]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.03.18-05.44.02:882][133]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.03.18-05.44.02:935][133]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.03.18-05.44.02:935][133]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.03.18-05.44.02:969][133]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.03.18-05.44.03:035][133]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.03.18-05.44.03:035][133]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.03.18-05.44.03:036][133]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.03.18-05.44.03:036][133]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.03.18-05.44.03:170][133]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.03.18-05.44.03:206][133]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.03.18-05.44.03:240][133]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.03.18-05.44.03:351][133]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.03.18-05.44.03:468][133]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.03.18-05.44.03:521][133]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.03.18-05.44.03:559][133]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.03.18-05.44.03:725][133]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.03.18-05.44.03:884][133]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.03.18-05.44.03:884][133]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.03.18-05.44.03:945][133]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.03.18-05.44.03:945][133]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.03.18-05.44.04:074][133]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.03.18-05.44.04:074][133]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.03.18-05.44.04:199][133]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.03.18-05.44.04:681][133]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.03.18-05.44.04:792][133]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.03.18-05.44.04:823][133]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.03.18-05.44.04:843][133]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.03.18-05.44.05:002][133]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.03.18-05.44.05:002][133]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.03.18-05.44.05:161][133]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.03.18-05.44.05:161][133]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.03.18-05.44.05:161][133]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.03.18-05.44.05:161][133]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.03.18-05.44.05:161][133]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.03.18-05.44.05:161][133]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.03.18-05.44.05:161][133]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.03.18-05.44.05:161][133]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.03.18-05.44.05:161][133]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.03.18-05.44.05:192][133]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.03.18-05.44.05:192][133]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.03.18-05.44.05:222][133]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.03.18-05.44.05:337][133]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.03.18-05.44.05:337][133]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.03.18-05.44.05:337][133]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.03.18-05.44.05:337][133]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.03.18-05.44.05:432][133]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.03.18-05.44.05:432][133]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.03.18-05.44.05:432][133]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.03.18-05.44.05:432][133]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.03.18-05.44.05:432][133]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.03.18-05.44.05:432][133]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.03.18-05.44.05:432][133]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.03.18-05.44.05:534][133]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.03.18-05.44.05:534][133]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.03.18-05.44.05:583][133]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.03.18-05.44.05:583][133]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.03.18-05.44.05:612][133]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.03.18-05.44.05:612][133]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.03.18-05.44.05:612][133]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.03.18-05.44.05:612][133]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.03.18-05.44.05:612][133]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.03.18-05.44.05:702][133]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.03.18-05.44.05:751][133]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.03.18-05.44.05:751][133]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.03.18-05.44.05:751][133]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.03.18-05.44.05:765][133]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.03.18-05.44.05:765][133]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.03.18-05.44.05:900][133]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.03.18-05.44.05:979][133]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.03.18-05.44.06:073][133]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.03.18-05.44.06:103][133]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.03.18-05.44.06:103][133]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.03.18-05.44.06:103][133]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.03.18-05.44.06:103][133]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.03.18-05.44.06:332][133]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.03.18-05.44.06:359][133]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.03.18-05.44.06:516][133]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.03.18-05.44.06:674][133]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.03.18-05.44.06:674][133]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.03.18-05.44.06:674][133]LogDirectoryWatcher: A directory notification for 'C:/Users/Skywalker/Documents/Unreal Projects/Escape/Binaries/Win64' was aborted.
+[2017.03.18-05.44.06:674][133]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.03.18-05.44.06:676][133]LogModuleManager: Shutting down and abandoning module Escape (222)
+[2017.03.18-05.44.06:676][133]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (220)
+[2017.03.18-05.44.06:748][133]LogModuleManager: Shutting down and abandoning module PhysXVehicles (218)
+[2017.03.18-05.44.06:748][133]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (216)
+[2017.03.18-05.44.06:748][133]LogModuleManager: Shutting down and abandoning module UdpMessaging (214)
+[2017.03.18-05.44.06:849][133]LogModuleManager: Shutting down and abandoning module TcpMessaging (212)
+[2017.03.18-05.44.07:044][133]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (210)
+[2017.03.18-05.44.07:156][133]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (208)
+[2017.03.18-05.44.07:182][133]LogModuleManager: Shutting down and abandoning module FacialAnimation (206)
+[2017.03.18-05.44.07:182][133]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (204)
+[2017.03.18-05.44.07:182][133]LogModuleManager: Shutting down and abandoning module Paper2D (202)
+[2017.03.18-05.44.07:199][133]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (200)
+[2017.03.18-05.44.07:199][133]LogModuleManager: Shutting down and abandoning module WmfMedia (198)
+[2017.03.18-05.44.07:199][133]LogModuleManager: Shutting down and abandoning module MfMedia (196)
+[2017.03.18-05.44.07:199][133]LogModuleManager: Shutting down and abandoning module MediaAssets (194)
+[2017.03.18-05.44.07:199][133]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (192)
+[2017.03.18-05.44.07:239][133]LogModuleManager: Shutting down and abandoning module VREditor (190)
+[2017.03.18-05.44.07:239][133]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (188)
+[2017.03.18-05.44.07:239][133]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (186)
+[2017.03.18-05.44.07:539][133]LogModuleManager: Shutting down and abandoning module FunctionalTesting (184)
+[2017.03.18-05.44.07:549][133]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (182)
+[2017.03.18-05.44.07:694][133]LogModuleManager: Shutting down and abandoning module UMG (180)
+[2017.03.18-05.44.07:857][133]LogModuleManager: Shutting down and abandoning module UMGEditor (179)
+[2017.03.18-05.44.07:973][133]LogModuleManager: Shutting down and abandoning module Sequencer (178)
+[2017.03.18-05.44.08:057][133]LogModuleManager: Shutting down and abandoning module AssetTools (176)
+[2017.03.18-05.44.08:384][133]LogModuleManager: Shutting down and abandoning module MessageLog (175)
+[2017.03.18-05.44.08:384][133]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (174)
+[2017.03.18-05.44.08:384][133]LogModuleManager: Shutting down and abandoning module SlateReflector (168)
+[2017.03.18-05.44.08:719][133]LogModuleManager: Shutting down and abandoning module Slate (166)
+[2017.03.18-05.44.08:719][133]LogModuleManager: Shutting down and abandoning module EditorStyle (164)
+[2017.03.18-05.44.08:760][133]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (162)
+[2017.03.18-05.44.08:832][133]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (160)
+[2017.03.18-05.44.08:832][133]LogModuleManager: Shutting down and abandoning module XAudio2 (158)
+[2017.03.18-05.44.08:832][133]LogModuleManager: Shutting down and abandoning module Networking (156)
+[2017.03.18-05.44.08:832][133]LogModuleManager: Shutting down and abandoning module Core (152)
+[2017.03.18-05.44.08:832][133]LogModuleManager: Shutting down and abandoning module AssetRegistry (150)
+[2017.03.18-05.44.09:127][133]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.03.18-05.44.09:127][133]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Skywalker/Documents/Unreal Projects/Escape/Content/' was aborted.
+[2017.03.18-05.44.09:128][133]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.03.18-05.44.09:164][133]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (149)
+[2017.03.18-05.44.09:170][133]LogModuleManager: Shutting down and abandoning module KismetCompiler (146)
+[2017.03.18-05.44.09:171][133]LogModuleManager: Shutting down and abandoning module PhysXFormats (144)
+[2017.03.18-05.44.09:171][133]LogModuleManager: Shutting down and abandoning module MeshUtilities (142)
+[2017.03.18-05.44.09:347][133]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (141)
+[2017.03.18-05.44.09:405][133]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (139)
+[2017.03.18-05.44.09:405][133]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (137)
+[2017.03.18-05.44.09:525][133]LogModuleManager: Shutting down and abandoning module PropertyEditor (135)
+[2017.03.18-05.44.09:638][133]LogModuleManager: Shutting down and abandoning module DerivedDataCache (132)
+[2017.03.18-05.44.09:664][133]LogDerivedDataCache: Shutdown
+[2017.03.18-05.44.09:664][133]LogModuleManager: Shutting down and abandoning module TargetPlatform (130)
+[2017.03.18-05.44.09:664][133]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (129)
+[2017.03.18-05.44.09:723][133]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (127)
+[2017.03.18-05.44.09:778][133]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (125)
+[2017.03.18-05.44.09:854][133]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (123)
+[2017.03.18-05.44.09:877][133]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (121)
+[2017.03.18-05.44.09:877][133]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (119)
+[2017.03.18-05.44.09:877][133]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (117)
+[2017.03.18-05.44.10:124][133]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (115)
+[2017.03.18-05.44.10:234][133]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (113)
+[2017.03.18-05.44.10:234][133]LogModuleManager: Shutting down and abandoning module ImageWrapper (112)
+[2017.03.18-05.44.10:234][133]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (109)
+[2017.03.18-05.44.10:234][133]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (107)
+[2017.03.18-05.44.10:251][133]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (105)
+[2017.03.18-05.44.10:251][133]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (103)
+[2017.03.18-05.44.10:251][133]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (101)
+[2017.03.18-05.44.10:251][133]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (99)
+[2017.03.18-05.44.10:251][133]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (97)
+[2017.03.18-05.44.10:251][133]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (95)
+[2017.03.18-05.44.10:251][133]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (93)
+[2017.03.18-05.44.10:251][133]LogModuleManager: Shutting down and abandoning module Messaging (91)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (89)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (87)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (85)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (83)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (81)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (79)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (77)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (75)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (73)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (71)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (69)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (67)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (65)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (63)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (61)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (59)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (57)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (55)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (53)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module InputCore (50)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module Settings (48)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module OculusRift (46)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.03.18-05.44.10:252][133]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.03.18-05.44.10:252][133]LogOnline:Display: Unloading online subsystem: NULL
+[2017.03.18-05.44.10:311][133]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.03.18-05.44.10:727][133]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.03.18-05.44.10:758][133]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.03.18-05.44.10:758][133]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7A18BA50-4372-7C8A-1C17-ACAD528D82C2%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.0-3299760%2B%2B%2BUE4%2BRelease-4.15&UserID=0c725ce3414ac82d77e498a9af02ad4f%7Ce087e746e4994e6abc07a646ba1966d3%7C655344f6-bc27-463f-8202-f6c35ae5a31b&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.03.18-05.44.10:761][133]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.03.18-05.44.10:793][133]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.03.18-05.44.10:854][133]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.03.18-05.44.10:944][133]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.03.18-05.44.10:944][133]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.03.18-05.44.10:944][133]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.03.18-05.44.11:002][133]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.03.18-05.44.11:064][133]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.03.18-05.44.11:064][133]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.03.18-05.44.11:106][133]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.03.18-05.44.11:106][133]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.03.18-05.44.11:106][133]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.03.18-05.44.11:106][133]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.03.18-05.44.11:144][133]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.03.18-05.44.11:173][133]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.03.18-05.44.11:173][133]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.03.18-05.44.11:208][133]LogExit: Exiting.
+[2017.03.18-05.44.11:212][133]Log file closed, 03/17/17 23:44:11
